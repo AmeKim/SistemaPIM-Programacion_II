@@ -1,0 +1,28 @@
+//
+// Created by ailem on 9/4/2026.
+//
+
+#include "Equipo.h"
+#include "Incidencia.h"
+
+Equipo::Equipo(const string id, double criticidad, float estado) : id(id), criticidad(criticidad), estado(estado), tiempoInactivo(0) {}
+
+double Equipo::calcularPrioridad() const {
+    return (criticidad * 0.5)
+        +  (contarIncidenciasActivas() * 0.3 )
+        +  (tiempoInactivo * 0.2 );
+}
+
+void Equipo::agregarIncidencia(Incidencia* inc) {
+    if (inc == nullptr) {
+        throw invalid_argument("Incidencia nula no permitida");
+        incidencias.push_back(inc);
+    }
+}
+
+int Equipo::contarIncidenciasActivas() const {
+    int cont = 0;
+    for (const Incidencia* inc : incidencias) {
+        if (inc->esActiva()) cont++;
+    }
+}
