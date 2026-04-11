@@ -5,7 +5,7 @@
 #include "Equipo.h"
 #include "Incidencia.h"
 
-Equipo::Equipo(const string id, double criticidad, float estado) : id(id), criticidad(criticidad), estado(estado), tiempoInactivo(0) {}
+Equipo::Equipo(const string id, double criticidad, double estado) : id(id), criticidad(criticidad), estado(estado), tiempoInactivo(0) {}
 
 double Equipo::calcularPrioridad() const {
     return (criticidad * 0.5)
@@ -25,4 +25,14 @@ int Equipo::contarIncidenciasActivas() const {
     for (const Incidencia* inc : incidencias) {
         if (inc->esActiva()) cont++;
     }
+    return cont;
 }
+
+string Equipo::getId() const { return id; }
+double Equipo::getCriticidad() const { return criticidad; }
+double Equipo::getEstado() const { return estado; }
+int Equipo::getTiempoInactivo() const { return tiempoInactivo; }
+
+void Equipo::setEstado(double e) { estado = e; }
+void Equipo::incrementarTiempoInactivo(){ tiempoInactivo++; }
+void Equipo::resetearInactivo(){ tiempoInactivo = 0; }

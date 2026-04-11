@@ -9,4 +9,8 @@ add_executable(SistemaPIM main.cpp
         Incidencia.cpp
         Incidencia.h
         EquipoComputo.cpp
-        EquipoComputo.h)
+        EquipoComputo.h
+        Utiles.cpp
+        Utiles.h
+        EquipoLaboratorio.cpp
+        EquipoLaboratorio.h)

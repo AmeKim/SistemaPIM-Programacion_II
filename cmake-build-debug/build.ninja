@@ -77,6 +77,20 @@ build CMakeFiles/SistemaPIM.dir/EquipoComputo.cpp.obj: CXX_COMPILER__SistemaPIM_
   OBJECT_DIR = CMakeFiles\SistemaPIM.dir
   OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
 
+build CMakeFiles/SistemaPIM.dir/Utiles.cpp.obj: CXX_COMPILER__SistemaPIM_unscanned_Debug C$:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Utiles.cpp || cmake_object_order_depends_target_SistemaPIM
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\SistemaPIM.dir\Utiles.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SistemaPIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
+
+build CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj: CXX_COMPILER__SistemaPIM_unscanned_Debug C$:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/EquipoLaboratorio.cpp || cmake_object_order_depends_target_SistemaPIM
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\SistemaPIM.dir\EquipoLaboratorio.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SistemaPIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SistemaPIM
@@ -85,7 +99,7 @@ build CMakeFiles/SistemaPIM.dir/EquipoComputo.cpp.obj: CXX_COMPILER__SistemaPIM_
 #############################################
 # Link the executable SistemaPIM.exe
 
-build SistemaPIM.exe: CXX_EXECUTABLE_LINKER__SistemaPIM_Debug CMakeFiles/SistemaPIM.dir/main.cpp.obj CMakeFiles/SistemaPIM.dir/Equipo.cpp.obj CMakeFiles/SistemaPIM.dir/Incidencia.cpp.obj CMakeFiles/SistemaPIM.dir/EquipoComputo.cpp.obj
+build SistemaPIM.exe: CXX_EXECUTABLE_LINKER__SistemaPIM_Debug CMakeFiles/SistemaPIM.dir/main.cpp.obj CMakeFiles/SistemaPIM.dir/Equipo.cpp.obj CMakeFiles/SistemaPIM.dir/Incidencia.cpp.obj CMakeFiles/SistemaPIM.dir/EquipoComputo.cpp.obj CMakeFiles/SistemaPIM.dir/Utiles.cpp.obj CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

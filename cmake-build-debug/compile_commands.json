@@ -22,5 +22,17 @@
   "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\EquipoComputo.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\EquipoComputo.cpp",
   "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/EquipoComputo.cpp",
   "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/EquipoComputo.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\Utiles.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\Utiles.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Utiles.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/Utiles.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\EquipoLaboratorio.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\EquipoLaboratorio.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/EquipoLaboratorio.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj"
 }
 ]

@@ -1,0 +1,29 @@
+//
+// Created by ailem on 11/4/2026.
+//
+
+#include "EquipoLaboratorio.h"
+
+EquipoLaboratorio::EquipoLaboratorio(const string& id, double criticidad, double estado, const string& tipoEquipo, bool calibrado) : Equipo(id, criticidad, estado), tipoEquipo(tipoEquipo), calibrado(calibrado) { }
+
+void EquipoLaboratorio::degradar() {
+    double factorDegradacion = (!calibrado) ? 4.0 : 2.0;
+    estado -= factorDegradacion;
+    if (estado < 0.0) estado = 0.0;
+    incrementarTiempoInactivo();
+}
+
+void EquipoLaboratorio::aplicarMantenimiento(){
+    estado += 25.0;
+    if (estado > 100.0) estado = 100.0;
+    calibrado = true;
+    resetearInactivo();
+}
+
+string EquipoLaboratorio::getTipo() const { return "Equipo de Laboratorio"; }
+
+string EquipoLaboratorio::getTipoEquipo() const { return tipoEquipo; }
+
+bool EquipoLaboratorio::isCalibrado() const { return calibrado; }
+
+void EquipoLaboratorio::setCalibrado(bool c) { calibrado = c; }

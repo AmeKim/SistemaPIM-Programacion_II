@@ -4,9 +4,11 @@
 
 #ifndef SISTEMAPIM_EQUIPO_H
 #define SISTEMAPIM_EQUIPO_H
+
 #include <iostream>
 #include <string>
 #include <vector>
+
 
 using namespace std;
 
@@ -21,7 +23,7 @@ protected:
     vector<Incidencia*> incidencias;
 
 public:
-    Equipo(const string id, double criticidad, float estado);
+    Equipo(const string id, double criticidad, double estado);
     virtual ~Equipo() = default;
 
     double calcularPrioridad() const;
@@ -38,7 +40,7 @@ public:
     double getEstado() const;
     int getTiempoInactivo() const;
 
-    void setEstado();
+    void setEstado(double e);
     void incrementarTiempoInactivo();
     void resetearInactivo();
 
