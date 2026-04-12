@@ -13,4 +13,14 @@ add_executable(SistemaPIM main.cpp
         Utiles.cpp
         Utiles.h
         EquipoLaboratorio.cpp
-        EquipoLaboratorio.h)
+        EquipoLaboratorio.h
+        IMantenimiento.cpp
+        IMantenimiento.h
+        MantPreventivo.cpp
+        MantPreventivo.h
+        MantCorrectivo.cpp
+        MantCorrectivo.h
+        Excepciones.cpp
+        Excepciones.h
+        Simulador.cpp
+        Simulador.h)

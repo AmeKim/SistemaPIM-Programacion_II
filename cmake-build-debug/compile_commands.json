@@ -34,5 +34,35 @@
   "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\EquipoLaboratorio.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\EquipoLaboratorio.cpp",
   "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/EquipoLaboratorio.cpp",
   "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\IMantenimiento.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\IMantenimiento.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/IMantenimiento.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/IMantenimiento.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\MantPreventivo.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\MantPreventivo.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/MantPreventivo.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/MantPreventivo.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\MantCorrectivo.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\MantCorrectivo.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/MantCorrectivo.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/MantCorrectivo.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\Excepciones.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\Excepciones.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Excepciones.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/Excepciones.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\Simulador.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\Simulador.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Simulador.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/Simulador.cpp.obj"
 }
 ]

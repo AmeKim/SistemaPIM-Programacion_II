@@ -13,6 +13,12 @@ double Equipo::calcularPrioridad() const {
         +  (tiempoInactivo * 0.2 );
 }
 
+void Equipo::resolverIncidencias(){
+    for (int i = 0; i < incidencias.size(); i++) {
+        incidencias[i]->resolver();
+    }
+}
+
 void Equipo::agregarIncidencia(Incidencia* inc) {
     if (inc == nullptr) {
         throw invalid_argument("Incidencia nula no permitida");
@@ -21,11 +27,11 @@ void Equipo::agregarIncidencia(Incidencia* inc) {
 }
 
 int Equipo::contarIncidenciasActivas() const {
-    int cont = 0;
-    for (const Incidencia* inc : incidencias) {
-        if (inc->esActiva()) cont++;
+    int count = 0;
+    for (int i = 0; i < incidencias.size(); i++) {
+        if (incidencias[i]->esActiva()) count++;
     }
-    return cont;
+    return count;
 }
 
 string Equipo::getId() const { return id; }

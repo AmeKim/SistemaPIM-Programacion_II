@@ -38,6 +38,39 @@ double Utiles::digDouble() {
     }
 }
 
+string Utiles::formatear(double valor, int decimales){
+    stringstream s;
+    s << fixed << setprecision(decimales) << valor;
+    return s.str();
+
+}
+
+void Utiles::imprimirSeparador() {
+    print("------------ ----------- ---------- -------------------------\n");
+}
+
+void Utiles::imprimirEncabezadoEquipos() {
+    stringstream ss;
+    ss << left
+       << setw(14) << "ID"
+       << setw(12) << "Prioridad"
+       << setw(11) << "Estado"
+       << setw(25) << "Tipo" << "\n";
+    print(ss.str());
+    imprimirSeparador();
+}
+
+void Utiles::imprimirEncabezadoMantemiento() {
+    stringstream s;
+    s << left
+       << setw(14) << "ID"
+       << setw(25) << "Tipo Mantenimiento"
+       << setw(11) << "Estado"
+       << setw(12) << "Incidencias" << "\n";
+    print(s.str());
+    print("------------ ------------------------ ---------- -----------\n");
+}
+
 void Utiles::limpiar() { system("cls"); }
 
 void Utiles::limpiarEnter() {

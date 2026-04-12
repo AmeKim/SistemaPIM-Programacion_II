@@ -28,6 +28,7 @@ public:
 
     double calcularPrioridad() const;
 
+    void resolverIncidencias();
     void agregarIncidencia(Incidencia* inc);
     int contarIncidenciasActivas() const;
 

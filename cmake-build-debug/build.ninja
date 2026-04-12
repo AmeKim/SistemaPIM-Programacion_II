@@ -91,6 +91,41 @@ build CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj: CXX_COMPILER__Sistema
   OBJECT_DIR = CMakeFiles\SistemaPIM.dir
   OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
 
+build CMakeFiles/SistemaPIM.dir/IMantenimiento.cpp.obj: CXX_COMPILER__SistemaPIM_unscanned_Debug C$:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/IMantenimiento.cpp || cmake_object_order_depends_target_SistemaPIM
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\SistemaPIM.dir\IMantenimiento.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SistemaPIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
+
+build CMakeFiles/SistemaPIM.dir/MantPreventivo.cpp.obj: CXX_COMPILER__SistemaPIM_unscanned_Debug C$:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/MantPreventivo.cpp || cmake_object_order_depends_target_SistemaPIM
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\SistemaPIM.dir\MantPreventivo.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SistemaPIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
+
+build CMakeFiles/SistemaPIM.dir/MantCorrectivo.cpp.obj: CXX_COMPILER__SistemaPIM_unscanned_Debug C$:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/MantCorrectivo.cpp || cmake_object_order_depends_target_SistemaPIM
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\SistemaPIM.dir\MantCorrectivo.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SistemaPIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
+
+build CMakeFiles/SistemaPIM.dir/Excepciones.cpp.obj: CXX_COMPILER__SistemaPIM_unscanned_Debug C$:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Excepciones.cpp || cmake_object_order_depends_target_SistemaPIM
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\SistemaPIM.dir\Excepciones.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SistemaPIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
+
+build CMakeFiles/SistemaPIM.dir/Simulador.cpp.obj: CXX_COMPILER__SistemaPIM_unscanned_Debug C$:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Simulador.cpp || cmake_object_order_depends_target_SistemaPIM
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\SistemaPIM.dir\Simulador.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SistemaPIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\SistemaPIM.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SistemaPIM
@@ -99,7 +134,7 @@ build CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj: CXX_COMPILER__Sistema
 #############################################
 # Link the executable SistemaPIM.exe
 
-build SistemaPIM.exe: CXX_EXECUTABLE_LINKER__SistemaPIM_Debug CMakeFiles/SistemaPIM.dir/main.cpp.obj CMakeFiles/SistemaPIM.dir/Equipo.cpp.obj CMakeFiles/SistemaPIM.dir/Incidencia.cpp.obj CMakeFiles/SistemaPIM.dir/EquipoComputo.cpp.obj CMakeFiles/SistemaPIM.dir/Utiles.cpp.obj CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj
+build SistemaPIM.exe: CXX_EXECUTABLE_LINKER__SistemaPIM_Debug CMakeFiles/SistemaPIM.dir/main.cpp.obj CMakeFiles/SistemaPIM.dir/Equipo.cpp.obj CMakeFiles/SistemaPIM.dir/Incidencia.cpp.obj CMakeFiles/SistemaPIM.dir/EquipoComputo.cpp.obj CMakeFiles/SistemaPIM.dir/Utiles.cpp.obj CMakeFiles/SistemaPIM.dir/EquipoLaboratorio.cpp.obj CMakeFiles/SistemaPIM.dir/IMantenimiento.cpp.obj CMakeFiles/SistemaPIM.dir/MantPreventivo.cpp.obj CMakeFiles/SistemaPIM.dir/MantCorrectivo.cpp.obj CMakeFiles/SistemaPIM.dir/Excepciones.cpp.obj CMakeFiles/SistemaPIM.dir/Simulador.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
