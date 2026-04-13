@@ -45,12 +45,11 @@ void Simulador::merge(vector<Equipo*>& vec, int inicio, int mid, int fin){
     vector<Equipo*> izq(n1);
     vector<Equipo*> der(n2);
 
-    for (int i = 0; i < n1; i++){
-        izq[i] = vec[inicio + i];
+    for (int a = 0; a < n1; a++){
+        izq[a] = vec[inicio + a];
     }
-
-    for (int j = 0; j < n2; j++){
-        der[j] = vec[mid + 1 + j];
+    for (int b = 0; b < n2; b++){
+        der[b] = vec[mid + 1 + b];
     }
 
     int i = 0, j = 0, k = inicio;
@@ -58,15 +57,15 @@ void Simulador::merge(vector<Equipo*>& vec, int inicio, int mid, int fin){
         if (izq[i]->calcularPrioridad() >= der[j]->calcularPrioridad()) {
             vec[k] = izq[i];
             i++;
-        }else{
+        } else {
             vec[k] = der[j];
             j++;
         }
         k++;
     }
 
-    while (i < n1) { vec[k] = izq[i]; i++; k++;}
-    while (j < n2) { vec[k] = der[i]; j++; k++;}
+    while (i < n1) { vec[k] = izq[i]; i++; k++; }
+    while (j < n2) { vec[k] = der[j]; j++; k++; }
 }
 
 Equipo* Simulador::buscarEquipoPorID(const string& id) {
@@ -178,7 +177,7 @@ void Simulador::ejecutarDia() {
             sEC << left
                 << setw(14) << " "
                 << "RAM: " << ec->getRamGB()
-                <<"GB: | SO: " << ec->getSistemaOperativo() << endl;
+                << " GB | SO: " << ec->getSistemaOperativo() << endl;
             Utiles::print(sEC.str());
         }
 
@@ -187,8 +186,8 @@ void Simulador::ejecutarDia() {
             stringstream sEL;
             sEL << left
                 << setw(14) << " "
-                << "Tipo: " << el->getTipo()
-                <<" | Calibrado: " << (el->isCalibrado() ? "Si" : "No") << endl;
+                << "Tipo: " << el->getTipoEquipo()
+                << " | Calibrado: " << (el->isCalibrado() ? "Si" : "No") << endl;
             Utiles::print(sEL.str());
         }
 
@@ -202,7 +201,7 @@ void Simulador::ejecutarDia() {
     // Resumen del Dia
     stringstream sResumen;
     sResumen  << "Backlog pendiente: " << backlog << endl
-              << "Resigo Global: " << Utiles::formatear(riesgoGlobal) << endl;
+              << "Riesgo Global: " << Utiles::formatear(riesgoGlobal) << endl;
     Utiles::print(sResumen.str());
 }
 

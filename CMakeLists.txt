@@ -23,4 +23,6 @@ add_executable(SistemaPIM main.cpp
         Excepciones.cpp
         Excepciones.h
         Simulador.cpp
-        Simulador.h)
+        Simulador.h
+        CargadorDatos.cpp
+        CargadorDatos.h)

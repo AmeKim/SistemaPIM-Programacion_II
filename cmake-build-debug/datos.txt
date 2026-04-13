@@ -1,0 +1,10 @@
+EQ-001;computo;9;70;4;Windows
+EQ-002;computo;6;82;8;Linux
+EQ-003;laboratorio;8;55;Microscopio;true
+EQ-004;laboratorio;5;90;Centrifuga;false
+EQ-005;computo;7;65;16;Windows
+INC;EQ-001;ALTA;1
+INC;EQ-001;MEDIA;2
+INC;EQ-002;BAJA;1
+INC;EQ-003;CRITICA;3
+INC;EQ-005;MEDIA;1
