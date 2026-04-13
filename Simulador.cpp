@@ -11,9 +11,13 @@
 
 using namespace std;
 
-Simulador::Simulador() : diaActual(0), backlog(0), riesgoGlobal(0.0), generador(random_device{}()){ }
+Simulador::Simulador() : diaActual(0), backlog(0), riesgoGlobal(0.0), generador(random_device{}()){
+    reporte = new Reporte("reporte_diario.txt", "reporte_acumulado.txt");
+    reporte->abrirArchivos();
+}
 
 Simulador::~Simulador(){
+    delete reporte;
     for (int i = 0; i < equipos.size(); i++) {
         delete equipos[i];
     }
@@ -203,6 +207,7 @@ void Simulador::ejecutarDia() {
     sResumen  << "Backlog pendiente: " << backlog << endl
               << "Riesgo Global: " << Utiles::formatear(riesgoGlobal) << endl;
     Utiles::print(sResumen.str());
+    reporte->registrarDia(diaActual, equipos, limite, backlog, riesgoGlobal);
 }
 
 void Simulador::ejecutarSimulacion(){
@@ -219,6 +224,7 @@ void Simulador::ejecutarSimulacion(){
     sFinal << "\n=== SIMULACION COMPLETADA === \n"
            << "Riesgo Global final: " << Utiles::formatear(riesgoGlobal) << endl;
     Utiles::print(sFinal.str());
+    reporte->registrarResumenFinal(30, riesgoGlobal);
 }
 
 

@@ -25,4 +25,6 @@ add_executable(SistemaPIM main.cpp
         Simulador.cpp
         Simulador.h
         CargadorDatos.cpp
-        CargadorDatos.h)
+        CargadorDatos.h
+        Reporte.cpp
+        Reporte.h)

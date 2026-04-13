@@ -14,6 +14,7 @@
 #include "MantPreventivo.h"
 #include "MantCorrectivo.h"
 #include "Excepciones.h"
+#include "Reporte.h"
 
 class Simulador{
 private:
@@ -23,6 +24,7 @@ private:
     int backlog;
     double riesgoGlobal;
     mt19937 generador;
+    Reporte* reporte;
 
     void mergeSort(vector<Equipo*>& vec, int inicio, int fin);
     void merge(vector<Equipo*>& vec, int inicio, int mid, int fin);
