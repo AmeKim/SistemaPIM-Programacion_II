@@ -1,3 +1,3 @@
-C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir
-C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/antho/Downloads/TC#5/SistemaPIM-Programacion_II/cmake-build-debug/CMakeFiles/SistemaPIM.dir
+C:/Users/antho/Downloads/TC#5/SistemaPIM-Programacion_II/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/antho/Downloads/TC#5/SistemaPIM-Programacion_II/cmake-build-debug/CMakeFiles/rebuild_cache.dir

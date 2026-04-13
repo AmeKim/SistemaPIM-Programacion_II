@@ -22,8 +22,8 @@ void Equipo::resolverIncidencias(){
 void Equipo::agregarIncidencia(Incidencia* inc) {
     if (inc == nullptr) {
         throw invalid_argument("Incidencia nula no permitida");
-        incidencias.push_back(inc);
     }
+    incidencias.push_back(inc);
 }
 
 int Equipo::contarIncidenciasActivas() const {

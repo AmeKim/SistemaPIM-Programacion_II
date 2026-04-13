@@ -66,7 +66,7 @@ void Simulador::merge(vector<Equipo*>& vec, int inicio, int mid, int fin){
     }
 
     while (i < n1) { vec[k] = izq[i]; i++; k++;}
-    while (j < n2) { vec[k] = der[i]; i++; k++;}
+    while (j < n2) { vec[k] = der[i]; j++; k++;}
 }
 
 Equipo* Simulador::buscarEquipoPorID(const string& id) {
@@ -177,7 +177,7 @@ void Simulador::ejecutarDia() {
             stringstream sEC;
             sEC << left
                 << setw(14) << " "
-                << "RAM: " << ec->getId()
+                << "RAM: " << ec->getRamGB()
                 <<"GB: | SO: " << ec->getSistemaOperativo() << endl;
             Utiles::print(sEC.str());
         }

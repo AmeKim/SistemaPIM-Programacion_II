@@ -1,5 +1,6 @@
 #include "Utiles.h"
 #include <iostream>
+#include <sstream>
 using namespace std;
 
 void Utiles::print(string valor)  { cout << valor; }
