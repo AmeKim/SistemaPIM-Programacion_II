@@ -15,6 +15,7 @@
 #include "MantCorrectivo.h"
 #include "Excepciones.h"
 #include "Reporte.h"
+#include "InterfazConsola.h"
 
 class Simulador{
 private:
@@ -25,6 +26,7 @@ private:
     double riesgoGlobal;
     mt19937 generador;
     Reporte* reporte;
+    InterfazConsola* interfaz;
 
     void mergeSort(vector<Equipo*>& vec, int inicio, int fin);
     void merge(vector<Equipo*>& vec, int inicio, int mid, int fin);
@@ -49,6 +51,7 @@ public:
     int getDiaActual() const;
     int getBacklog() const;
     double getRiesgoGlobal() const;
+    string nivelRiesgo() const;
 };
 
 

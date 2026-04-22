@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/antho/Downloads/TC#5/SistemaPIM-Programacion_II
+# Install script for directory: C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,13 +34,13 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/antho/Documents/CLion/CLion 2025.3/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2025.3.3/bin/mingw/bin/objdump.exe")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/antho/Downloads/TC#5/SistemaPIM-Programacion_II/cmake-build-debug/install_local_manifest.txt"
+  file(WRITE "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/antho/Downloads/TC#5/SistemaPIM-Programacion_II/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

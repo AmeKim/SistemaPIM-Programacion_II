@@ -27,4 +27,6 @@ add_executable(SistemaPIM main.cpp
         CargadorDatos.cpp
         CargadorDatos.h
         Reporte.cpp
-        Reporte.h)
+        Reporte.h
+        InterfazConsola.cpp
+        InterfazConsola.h)

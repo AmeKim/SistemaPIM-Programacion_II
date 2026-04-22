@@ -7,7 +7,6 @@
 
 void MantPreventivo::ejecutar(Equipo& e){
     e.aplicarMantenimiento();
-    Utiles::print("[Preventivo] Mantenimiento aplicado a: " + e.getId() + "\n");
 }
 
 string MantPreventivo::getNombre() const{ return "Mantenimiento Preventivo"; }

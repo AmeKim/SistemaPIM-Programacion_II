@@ -7,14 +7,14 @@
 EquipoLaboratorio::EquipoLaboratorio(const string& id, double criticidad, double estado, const string& tipoEquipo, bool calibrado) : Equipo(id, criticidad, estado), tipoEquipo(tipoEquipo), calibrado(calibrado) { }
 
 void EquipoLaboratorio::degradar() {
-    double factorDegradacion = (!calibrado) ? 4.0 : 2.0;
+    double factorDegradacion = (!calibrado) ? 2.5 : 1.5;
     estado -= factorDegradacion;
     if (estado < 0.0) estado = 0.0;
     incrementarTiempoInactivo();
 }
 
 void EquipoLaboratorio::aplicarMantenimiento(){
-    estado += 25.0;
+    estado += 40.0;
     if (estado > 100.0) estado = 100.0;
     calibrado = true;
     resetearInactivo();

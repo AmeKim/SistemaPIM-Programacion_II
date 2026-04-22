@@ -4,6 +4,7 @@
 
 #include "Equipo.h"
 #include "Incidencia.h"
+#include "Excepciones.h"
 
 Equipo::Equipo(const string id, double criticidad, double estado) : id(id), criticidad(criticidad), estado(estado), tiempoInactivo(0) {}
 
@@ -21,7 +22,7 @@ void Equipo::resolverIncidencias(){
 
 void Equipo::agregarIncidencia(Incidencia* inc) {
     if (inc == nullptr) {
-        throw invalid_argument("Incidencia nula no permitida");
+        throw OperacionInconsistenteException("Incidencia nula no permitida");
     }
     incidencias.push_back(inc);
 }

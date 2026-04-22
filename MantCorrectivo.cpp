@@ -9,7 +9,6 @@
 void MantCorrectivo::ejecutar(Equipo& e){
     e.aplicarMantenimiento();
     e.resolverIncidencias();
-    Utiles::print("[Correctivo] Reparacion urgente aplicada a:" + e.getId() + "\n");
 }
 
 string MantCorrectivo::getNombre() const { return "Mantenimiento Correctivo";}

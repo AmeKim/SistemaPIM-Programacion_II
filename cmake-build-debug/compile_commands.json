@@ -64,5 +64,23 @@
   "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\Simulador.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\Simulador.cpp",
   "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Simulador.cpp",
   "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/Simulador.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\CargadorDatos.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\CargadorDatos.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/CargadorDatos.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/CargadorDatos.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\Reporte.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\Reporte.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/Reporte.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/Reporte.cpp.obj"
+},
+{
+  "directory": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\SistemaPIM.dir\\InterfazConsola.cpp.obj -c C:\\Users\\ailem\\OneDrive\\Documentos\\GitHub\\SistemaPIM\\InterfazConsola.cpp",
+  "file": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/InterfazConsola.cpp",
+  "output": "C:/Users/ailem/OneDrive/Documentos/GitHub/SistemaPIM/cmake-build-debug/CMakeFiles/SistemaPIM.dir/InterfazConsola.cpp.obj"
 }
 ]
