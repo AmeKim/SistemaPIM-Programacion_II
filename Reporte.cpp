@@ -19,17 +19,24 @@ Reporte::~Reporte() {
 void Reporte::abrirArchivos() {
     archivoDiario.open(nombreDiario);
     if (!archivoDiario.is_open()) {
-        throw runtime_error("No se pudo abrir el archivo diario: " + nombreDiario);
+        throw ArchivoInvalidoException("No se pudo abrir el archivo diario: " + nombreDiario);
     }
     archivoAcumulado.open(nombreAcumulado);
     if (!archivoAcumulado.is_open()) {
-        throw runtime_error("No se pudo abrir el archivo acumulado: " + nombreAcumulado);
+        throw ArchivoInvalidoException("No se pudo abrir el archivo acumulado: " + nombreAcumulado);
     }
 }
 
 void Reporte::cerrarArchivos() {
     if (archivoDiario.is_open())   archivoDiario.close();
     if (archivoAcumulado.is_open()) archivoAcumulado.close();
+}
+
+string Reporte::nivelRiesgo(double riesgoGlobal) const{
+    if (riesgoGlobal <= 10.0) return "BAJO";
+    if (riesgoGlobal <= 20.0) return "MEDIO";
+    if (riesgoGlobal <= 35.0) return "ALTO";
+    return "CRITICO";
 }
 
 void Reporte::registrarDia(int dia,
@@ -71,6 +78,11 @@ void Reporte::registrarDia(int dia,
     }
 
     ss << "\nEquipos pendientes:\n";
+    ss << left
+       << setw(14) << "ID"
+       << setw(12) << "Prioridad"
+       << setw(25) << "Tipo" << "\n";
+    ss << "------------ ----------- ------------------------\n";
     for (int i = limite; i < equipos.size(); i++) {
         Equipo* e = equipos[i];
         ss << left
@@ -80,7 +92,8 @@ void Reporte::registrarDia(int dia,
     }
 
     ss << "\nBacklog pendiente: " << backlog << "\n";
-    ss << "Riesgo Global: " << Utiles::formatear(riesgoGlobal) << "\n";
+    ss << "Riesgo Global: " << Utiles::formatear(riesgoGlobal)
+       << "% - " << nivelRiesgo(riesgoGlobal) << "\n";
 
     archivoDiario << ss.str();
     archivoAcumulado << ss.str();
@@ -90,7 +103,8 @@ void Reporte::registrarResumenFinal(int totalDias, double riesgoFinal) {
     stringstream ss;
     ss << "\n=== RESUMEN FINAL ===\n"
        << "Total de dias simulados: " << totalDias << "\n"
-       << "Riesgo Global final: " << Utiles::formatear(riesgoFinal) << "\n";
+       << "Riesgo Global final: " << Utiles::formatear(riesgoFinal)
+       << "% - " << nivelRiesgo(riesgoFinal) << "\n";
 
     archivoAcumulado << ss.str();
 }

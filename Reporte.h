@@ -7,7 +7,10 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <iomanip>
 #include "Equipo.h"
+#include "Excepciones.h"
+
 using namespace std;
 
 class Reporte {
@@ -16,6 +19,7 @@ private:
     ofstream archivoAcumulado;
     string nombreDiario;
     string nombreAcumulado;
+    string nivelRiesgo(double riesgoGlobal) const;
 public:
     Reporte(const string& nombreDiario, const string& nombreAcumulado);
     ~Reporte();
