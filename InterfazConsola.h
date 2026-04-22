@@ -12,6 +12,7 @@ using namespace std;
 
 class InterfazConsola{
 public:
+    void ejecutar();
     void mostrarIniciSimulacion();
     void mostrarDia(int dia);
     void mostrarTopPrioridad(const vector<Equipo*>& equipos, int limite);

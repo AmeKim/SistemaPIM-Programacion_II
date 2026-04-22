@@ -131,6 +131,18 @@ IMantenimiento* Simulador::seleccionarEstrategia(Equipo* equipo) {
     return new MantPreventivo();
 }
 
+void Simulador::cargarIncidencias(vector<Incidencia*>& incs) {
+    for (int i = 0; i < incs.size(); i++) {
+        for (int j = 0; j < equipos.size(); j++) {
+            if (equipos[j]->getId() == incs[i]->getEquipoID()) {
+                equipos[j]->agregarIncidencia(incs[i]);
+                incidencias.push_back(incs[i]);
+                break;
+            }
+        }
+    }
+}
+
 void Simulador::ejecutarDia() {
     diaActual++;
     interfaz->mostrarDia(diaActual);

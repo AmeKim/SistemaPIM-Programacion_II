@@ -3,7 +3,9 @@
 //
 
 #include "InterfazConsola.h"
-#include "InterfazConsola.h"
+#include "CargadorDatos.h"
+#include "Simulador.h"
+#include "Excepciones.h"
 #include "EquipoComputo.h"
 #include "EquipoLaboratorio.h"
 #include <sstream>
@@ -84,4 +86,31 @@ void InterfazConsola::mostrarSimulacionCompletada(double riesgoGlobal, const str
        << "Riesgo Global final: " << Utiles::formatear(riesgoGlobal)
        << "% - " << nivelRiesgo << "\n";
     Utiles::print(ss.str());
+}
+
+void InterfazConsola::ejecutar(){
+    try {
+        vector<Equipo*> equipos;
+        vector<Incidencia*> incidencias;
+
+        CargadorDatos::cargarDesdeArchivo("datos.txt", equipos, incidencias);
+
+        Simulador sim;
+
+        for (int i = 0; i < equipos.size(); i++) {
+            sim.agregarEquipo(equipos[i]);
+        }
+
+        sim.cargarIncidencias(incidencias);
+        sim.ejecutarSimulacion();
+
+    } catch (const ArchivoInvalidoException& e) {
+        Utiles::print(string(e.what()) + "\n");
+    } catch (const FormatoInvalidoException& e) {
+        Utiles::print(string(e.what()) + "\n");
+    } catch (const OperacionInconsistenteException& e) {
+        Utiles::print(string(e.what()) + "\n");
+    } catch (const exception& e) {
+        Utiles::print(string("Error inesperado: ") + e.what() + "\n");
+    }
 }

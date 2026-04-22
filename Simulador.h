@@ -52,6 +52,7 @@ public:
     int getBacklog() const;
     double getRiesgoGlobal() const;
     string nivelRiesgo() const;
+    void cargarIncidencias(vector<Incidencia*>& incs);
 };
 
 

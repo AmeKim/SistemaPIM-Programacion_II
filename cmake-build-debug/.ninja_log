@@ -26,3 +26,7 @@
 5	652	7985209835615422	CMakeFiles/SistemaPIM.dir/main.cpp.obj	f58cad6f21bf69e
 9	766	7985209835655431	CMakeFiles/SistemaPIM.dir/Simulador.cpp.obj	e674bcc21a1bb05f
 766	968	7985209843231093	SistemaPIM.exe	4329f883970e9b46
+9	1452	7985214297304622	CMakeFiles/SistemaPIM.dir/main.cpp.obj	f58cad6f21bf69e
+317	1470	7985214300373532	CMakeFiles/SistemaPIM.dir/InterfazConsola.cpp.obj	98c4d8b899a8f7b8
+312	1488	7985214300313503	CMakeFiles/SistemaPIM.dir/Simulador.cpp.obj	e674bcc21a1bb05f
+1489	2396	7985214312080721	SistemaPIM.exe	4329f883970e9b46
