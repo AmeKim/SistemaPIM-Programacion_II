@@ -10,10 +10,10 @@
 using namespace std;
 
 Severidad CargadorDatos::parsearSeveridad(const string& s) {
-    if (s == "BAJA")    return Severidad::Baja;
-    if (s == "MEDIA")   return Severidad::Media;
-    if (s == "ALTA")    return Severidad::Alta;
-    if (s == "CRITICA") return Severidad::Critica;
+    if (s == "BAJA"    || s == "Baja")    return Severidad::Baja;
+    if (s == "MEDIA"   || s == "Media")   return Severidad::Media;
+    if (s == "ALTA"    || s == "Alta")    return Severidad::Alta;
+    if (s == "CRITICA" || s == "Critica") return Severidad::Critica;
     throw FormatoInvalidoException("Severidad desconocida: " + s);
 }
 
@@ -43,7 +43,7 @@ void CargadorDatos::cargarDesdeArchivo(const string& nombreArchivo,
                 throw FormatoInvalidoException("Linea " + to_string(numLinea) + ": incidencia incompleta");
             }
             string id = "INC-" + partes[1] + "-" + partes[3];
-            string equipoID = partes[1];
+            string& equipoID = partes[1];
             Severidad sev = parsearSeveridad(partes[2]);
             int dia = stoi(partes[3]);
             incidencias.push_back(new Incidencia(id, equipoID, sev, dia));
@@ -53,11 +53,11 @@ void CargadorDatos::cargarDesdeArchivo(const string& nombreArchivo,
             double criticidad = stod(partes[2]);
             double estado = stod(partes[3]);
             int ram = stoi(partes[4]);
-            string so = partes[5];
+            string& so = partes[5];
             equipos.push_back(new EquipoComputo(id, criticidad, estado, ram, so));
 
         } else if (partes.size() >= 6 && partes[1] == "laboratorio") {
-            string id = partes[0];
+            string& id = partes[0];
             double criticidad = stod(partes[2]);
             double estado = stod(partes[3]);
             string tipoEquipo = partes[4];
