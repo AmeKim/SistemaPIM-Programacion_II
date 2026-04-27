@@ -172,6 +172,8 @@ void Simulador::ejecutarDia() {
         interfaz->mostrarDetalleEquipo(e);
         delete estrategia;
     }
+    // Retirar equipos atendidos del vector
+    equipos.erase(equipos.begin(), equipos.begin() + limite);
 
     // Actualizar backlog y riesgo
     backlog = equipos.size() - limite;
